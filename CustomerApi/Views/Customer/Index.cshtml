@@ -1,0 +1,60 @@
+﻿@model CustomerList
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<h1>All Customers</h1>
+
+<br />
+
+<div class="text-center">
+    
+    <table class="table table-boarderd table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Postcode
+                </th>
+                <th>
+                    Height (in meters)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var customer in Model.AllCustomers)
+            {
+                <tr>
+                    <td width="25%">
+                        @customer.Name
+                    </td>
+                    <td width="25%">
+                        @customer.Age
+                    </td>
+                    <td width="25%">
+                        @customer.Postcode
+                    </td>
+                    <td width="25%">
+                        @customer.HeightInMeters
+                    </td>
+                    <td>
+                        <a asp-controller="Customer" asp-action="Edit" asp-route-id="@customer.Id" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<br />
+<br />
+
+<a asp-controller="Customer" asp-action="Create" class="btn btn-primary">Add Customer</a>
