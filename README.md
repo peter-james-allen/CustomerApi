@@ -22,7 +22,7 @@ I could not implement the requirement to disable the submit button on the user f
 ## Next Steps
 There are a number of things that could be done to make this better.
 
-- Writing complete unit tests using NUnit for the CustomerList and integration tests for the CustomerController using WebApplicationFactory to create a test program and call the different endpoints and check that the CustomerList methods were being called by injecting a mock CustomerList object into the services.
+- Writing complete unit tests using NUnit for the CustomerList (I started this but did not have time) and integration tests for the CustomerController using WebApplicationFactory to create a test program and call the different endpoints and check that the CustomerList methods were being called by injecting a mock CustomerList object into the services.
 
 - Write frontend tests using a framework such as playwright that would test the UI is working correctly.
 
