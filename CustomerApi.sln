@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34302.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerApi", "CustomerApi\CustomerApi.csproj", "{81267FE9-B274-478D-8B5D-99B7683C215C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerApi", "CustomerApi\CustomerApi.csproj", "{81267FE9-B274-478D-8B5D-99B7683C215C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerApi.Test", "CustomerApi.Test\CustomerApi.Test.csproj", "{E32C53A9-17E0-420C-B0F7-D8A986B1CF27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CE33466-00D4-435A-9A1C-215DB66E309F}"
+	ProjectSection(SolutionItems) = preProject
+		Application Programming Test.pdf = Application Programming Test.pdf
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
